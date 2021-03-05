@@ -60,8 +60,8 @@ bindsym XF86Tools exec --no-startup-id xinput --enable "SynPS/2 Synaptics TouchP
 bindsym Shift+XF86Tools exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad" && notify-send "Touchpad disabled"
 
 # Use acpilight to adjust brightness
-bindsym XF86MonBrightnessDown exec acpilight -dec 5
-bindsym XF86MonBrightnessUp exec acpilight -inc 5
+bindsym XF86MonBrightnessDown exec --no-startup-id acpilight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id acpilight -inc 5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
